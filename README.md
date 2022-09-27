@@ -4,9 +4,9 @@
 
 openzepplein 이용(상속)해서 ERC20 토큰 만들기
 
--   [ ] mintable (owner만 가능)
--   [ ] burnable (토큰 소유자 또는 승인된 주소만 가능)
--   [ ] snapshot (누구나 가능)
+-   [x] mintable (owner만 가능)
+-   [x] burnable (토큰 소유자 또는 승인된 주소만 가능)
+-   [x] snapshot (누구나 가능)
 
 ---
 
