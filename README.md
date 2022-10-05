@@ -21,7 +21,7 @@ ERC721 컨트랙 만들기
 -   [x] id는 순서대로 증가합니다.
 -   [x] mint 는 누구나 가능합니다.
 -   [x] mint 는 1분에 10개까지만 생성될 수 있습니다.
--   [ ] 메타데이타 (tokenURL)는 아래와 같이 나오게
+-   [x] 메타데이타 (tokenURL)는 아래와 같이 나오게
 
 ```json
 "name": "Egg Head",
@@ -33,7 +33,6 @@ ERC721 컨트랙 만들기
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350">
-
  <style>.base { fill: white; font-family: serif; font-size: 14px; }</style>
  <rect width="100%" height="500%" fill="grey" />
  <text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle">아이디 표시, 별명입력</text>

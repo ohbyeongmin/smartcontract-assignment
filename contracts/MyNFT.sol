@@ -3,6 +3,8 @@ pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/utils/Base64.sol"; 
 
 // contract-2
 
@@ -33,5 +35,17 @@ contract MyNFT is ERC721 {
         uint newId = _tokenIds.current();
         _tokenIds.increment();
         _mint(msg.sender, newId);
+    }
+
+    function tokenURI(uint256 tokenId) override public pure returns (string memory) {
+        string memory svg = '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: white; font-family: serif; font-size: 14px; }</style><rect width="100%" height="500%" fill="grey" /><text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle">ohbyeongmin, obm</text></svg>';
+        
+        string memory output = string(abi.encodePacked(svg));
+        
+        string memory json = Base64.encode(bytes(string(abi.encodePacked('{"name": "Egg Head ', Strings.toString(tokenId), '", "description": "A new NFT collection", "image": "data:image/svg+xml;base64,', Base64.encode(bytes(output)), '"}'))));
+
+        output = string(abi.encodePacked('data:application/json;base64,', json));
+
+        return output;
     }
 }
