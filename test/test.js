@@ -43,7 +43,7 @@ describe("OBMToken contract", function () {
         });
     });
 
-    // Buen 테스트 :
+    // Burn 테스트 :
     // 1. addr2 는 토큰 소유자도 아니고 승인된 주소도 아니라 burn 을 호출 할 수 없음.
     // 2. burner 는 토큰은 없지만 승인된 주소라 burn 을 호출 할 수 있음.
     // 3. addr1 는 승인된 주소는 아니지만 토큰을 소유하기 때문에 burn 을 호출 할 수 있음.

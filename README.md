@@ -2,6 +2,8 @@
 
 ## contract-1
 
+[Contract File](/contracts/OBMToken.sol)
+
 openzepplein 이용(상속)해서 ERC20 토큰 만들기
 
 -   [x] mintable (owner만 가능)
@@ -12,11 +14,13 @@ openzepplein 이용(상속)해서 ERC20 토큰 만들기
 
 ## contract-2
 
+[Contract File](/contracts/MyNFT.sol)
+
 ERC721 컨트랙 만들기
 
--   [ ] id는 순서대로 증가합니다.
--   [ ] mint 는 누구나 가능합니다.
--   [ ] mint 는 1분에 10개까지만 생성될 수 있습니다.
+-   [x] id는 순서대로 증가합니다.
+-   [x] mint 는 누구나 가능합니다.
+-   [x] mint 는 1분에 10개까지만 생성될 수 있습니다.
 -   [ ] 메타데이타 (tokenURL)는 아래와 같이 나오게
 
 ```json
